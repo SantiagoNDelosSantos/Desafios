@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Manager</title>
+</head>
+
+<body style="display:flex; flex-direction: column; justify-content: center; align-items: center;     font-family: 'Roboto';">
+
+    <h1>Product Manager</h1>
+
+    <h2>Agregar producto</h2>
+    
+    <form style="display:flex; flex-direction: column; justify-content: center; align-items: center; gap: 1em;">
+        
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title">
+
+        <label for="description">Descripción:</label>
+        <input type="text" id="description" name="description">
+
+        <label for="price">Precio:</label>
+        <input type="number" id="price" name="price">
+
+        <label for="thumbnail">Imagen:</label>
+        <input type="text" id="thumbnail" name="thumbnail">
+
+        <label for="code">Código:</label>
+        <input type="text" id="code" name="code">
+
+        <label for="stock">Cantidad en stock:</label>
+        <input type="number" id="stock" name="stock">
+
+        <input type="button" id="add-product" value="Agregar">
+    
+    </form>
+
+    <h2>Productos actuales</h2>
+
+    <table >
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+                <th>Código</th>
+                <th>Cantidad en stock</th>
+            </tr>
+        </thead>
+        <tbody id="product-list"></tbody>
+    </table>
+
+    <input type="button" id="show-products" value="Mostrar productos">
+
+    <script src="handsOnLab1.js"></script>
+    <script src="practica.js"></script>
+    <script src="handsOnLab2.js"></script>
+
+</body>
+
+</html>
